@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/util/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JumbotronComponent } from './components/util/jumbotron/jumbotron.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { LayoutModule } from '@angular/cdk/layout';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { JumbotronComponent } from './components/util/jumbotron/jumbotron.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,25 @@
-<p>
-  navbar works!
-</p>
+<div *ngIf="fullLayout; else drop">
+  <mat-toolbar color="primary">
+    <span>Full Layout</span>
+    <span class="spacer"></span>
+    <span class="nav-item">About Me</span>
+    <span class="nav-item">Projects</span>
+  </mat-toolbar>
+</div>
+
+<ng-template #drop>
+  <mat-toolbar color="primary">
+    <span>Drop Layout</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="dropdown">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-menu #dropdown>
+    <button mat-menu-item>About Me</button>
+    <button mat-menu-item>Projects</button>
+  </mat-menu>
+
+</ng-template>
+<ng-template #full></ng-template>

@@ -11,12 +11,16 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { AboutComponent } from './components/routes/about/about.component';
+import { ProjectsComponent } from './components/routes/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,8 +2,8 @@
   <mat-toolbar color="primary">
     <span>Full Layout</span>
     <span class="spacer"></span>
-    <span class="nav-item">About Me</span>
-    <span class="nav-item">Projects</span>
+    <span class="nav-item" [routerLink]="['/about']">About Me</span>
+    <span class="nav-item" [routerLink]="['/projects']">Projects</span>
   </mat-toolbar>
 </div>
 
@@ -17,8 +17,8 @@
   </mat-toolbar>
 
   <mat-menu #dropdown>
-    <button mat-menu-item>About Me</button>
-    <button mat-menu-item>Projects</button>
+    <button mat-menu-item [routerLink]="['/about']">About Me</button>
+    <button mat-menu-item [routerLink]="['/projects']">Projects</button>
   </mat-menu>
 
 </ng-template>

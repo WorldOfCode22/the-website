@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   get FullLayout() { return this.fullLayout; }
 
   ngOnInit() {
+    if (window.screen.width > 999) { this.fullLayout = true; }
     this.breakpointObserver.observe([
       Breakpoints.Medium,
       Breakpoints.Large,

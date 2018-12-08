@@ -9,6 +9,7 @@ export class Application {
     this.listen.bind(this);
     this.app = express();
     this.app.use("/api/images", express.static(join(__dirname, "../../public/images")));
+    this.app.use("/", express.static(join(__dirname, "../../public/client")));
     this.app.listen(Environment.Port, this.listen);
   }
 

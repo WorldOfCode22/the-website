@@ -11,8 +11,12 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
 import { AboutComponent } from './components/routes/about/about.component';
 import { ProjectsComponent } from './components/routes/projects/projects.component';
+import { ProjectCardComponent } from './components/util/project-card/project-card.component';
+import { DialogPopupComponent } from './components/util/dialog-popup/dialog-popup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { ProjectsComponent } from './components/routes/projects/projects.compone
     NavbarComponent,
     JumbotronComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectCardComponent,
+    DialogPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +36,12 @@ import { ProjectsComponent } from './components/routes/projects/projects.compone
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
+    MatDialogModule,
     LayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogPopupComponent]
 })
 export class AppModule { }

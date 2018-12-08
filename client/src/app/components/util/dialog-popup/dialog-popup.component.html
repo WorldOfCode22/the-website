@@ -1,0 +1,10 @@
+<div class="text-center">
+  <h3>You are opening another website</h3>
+  <p>
+    If you click ok below you will go to {{Link}} and may leave this page depending on your settings.
+    Also depending on your settings popup blocker may try and prevent this.
+    If you do not want to do this click on the stay button.
+  </p>
+  <button mat-button (click)="OnClose('OK')">Ok</button>
+  <button mat-button (click)="OnClose('STAY')">Stay</button>
+</div>

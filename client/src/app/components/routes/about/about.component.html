@@ -1,6 +1,6 @@
-<div class="container center">
-  <div [ngClass]="{'flex-0': IsXSmall, 'flex-1': IsSmall || IsBiggerThenSmall}"></div>
-  <div [ngClass]="{'flex-1': IsXSmall, 'flex-3': IsSmall || IsBiggerThenSmall}">
+<div class="row text-center">
+  <div class="col-0 col-sm-1 col-md-2 col-lg-2 col-xl-3"></div>
+  <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6">
     <h1>About Me!</h1>
     <h3>Education</h3>
     <p>
@@ -49,5 +49,5 @@
       I love writing pieces of code turn into functioning applications. 
     </p>
   </div>
-  <div [ngClass]="{'flex-0': IsXSmall, 'flex-1': IsSmall || IsBiggerThenSmall}"></div>
+  <div class="col-0 col-sm-1 col-md-2 col-lg-2 col-xl-3"></div>
 </div>

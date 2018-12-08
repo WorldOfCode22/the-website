@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Calculator',
       subtitle: 'A simple JS calculator',
       content: 'A simple jQuery and bootstrap calculator that can do simple addition,' +
-       'subtraction, multiplication and division. This project is on Codepen.',
+       ' subtraction, multiplication and division. This project is on Codepen.',
       image: `${environment.baseApiUrl}/images/JS-calc.png`,
       localLink: false,
       link: 'https://codepen.io/Bloodypizza17/full/dVBJgW'

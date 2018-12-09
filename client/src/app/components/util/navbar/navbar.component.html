@@ -1,6 +1,6 @@
 <div *ngIf="FullLayout; else drop">
   <mat-toolbar color="primary">
-    <span>Full Layout</span>
+    <span [routerLink]="['/']">Sloan Gwaltney</span>
     <span class="spacer"></span>
     <span class="nav-item" [routerLink]="['/about']">About Me</span>
     <span class="nav-item" [routerLink]="['/projects']">Projects</span>
@@ -10,7 +10,7 @@
 
 <ng-template #drop>
   <mat-toolbar color="primary">
-    <span>Drop Layout</span>
+    <span [routerLink]="['/']">Sloan Gwaltney</span>
     <span class="spacer"></span>
     <button mat-icon-button [matMenuTriggerFor]="dropdown">
       <mat-icon>menu</mat-icon>

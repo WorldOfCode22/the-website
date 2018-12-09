@@ -18,6 +18,7 @@ import { ProjectsComponent } from './components/routes/projects/projects.compone
 import { ProjectCardComponent } from './components/util/project-card/project-card.component';
 import { DialogPopupComponent } from './components/util/dialog-popup/dialog-popup.component';
 import { SkillsComponent } from './components/routes/skills/skills.component';
+import { HomeComponent } from './components/routes/home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SkillsComponent } from './components/routes/skills/skills.component';
     ProjectsComponent,
     ProjectCardComponent,
     DialogPopupComponent,
-    SkillsComponent
+    SkillsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

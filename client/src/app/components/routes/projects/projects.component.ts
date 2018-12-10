@@ -53,7 +53,7 @@ export class ProjectsComponent implements OnInit {
       ' GitHub. This project was made with React and bootstrap CSS and is on Codepen.',
       image: `${environment.baseApiUrl}/images/mark-down.png`,
       localLink: false,
-      link: 'https://codepen.io/Bloodypizza17/pen/ooqvjL'
+      link: 'https://codepen.io/Bloodypizza17/full/ooqvjL'
     }
   ];
   constructor() { }

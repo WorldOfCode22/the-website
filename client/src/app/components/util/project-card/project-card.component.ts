@@ -15,7 +15,6 @@ export interface IDialogData {
 })
 export class ProjectCardComponent implements OnInit {
 
-  private popupActive = false;
   constructor(private router: Router, private dialog: MatDialog) { }
 
   @Input() private card: ICard;
@@ -26,6 +25,9 @@ export class ProjectCardComponent implements OnInit {
   get Content() { return this.card.content; }
   get AppLink() { return this.card.link; }
   get LocalLink() { return this.card.localLink; }
+
+  // Should only be used in testing
+  set Card(data: ICard) { this.card = data; }
 
   private openDialog() {
     const dialogRef = this.dialog.open(DialogPopupComponent, {

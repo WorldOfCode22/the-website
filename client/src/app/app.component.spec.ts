@@ -12,6 +12,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AboutComponent } from './components/routes/about/about.component';
 import { ProjectsComponent } from './components/routes/projects/projects.component';
+import { SkillsComponent } from './components/routes/skills/skills.component';
+import { HomeComponent } from './components/routes/home/home.component';
+import { FooterComponent } from './components/util/footer/footer.component';
+import { ProjectCardComponent } from './components/util/project-card/project-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -25,13 +30,18 @@ describe('AppComponent', () => {
         MatMenuModule,
         MatButtonModule,
         MatIconModule,
-        LayoutModule
+        LayoutModule,
+        MatCardModule
       ],
       declarations: [
         AppComponent,
         NavbarComponent,
         AboutComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        SkillsComponent,
+        HomeComponent,
+        FooterComponent,
+        ProjectCardComponent
       ],
     }).compileComponents();
   }));

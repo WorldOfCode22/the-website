@@ -15,7 +15,7 @@ export interface IDialogData {
 })
 export class ProjectCardComponent implements OnInit {
 
-  constructor(private router: Router, private dialog: MatDialog) { }
+  constructor(private router: Router, public dialog: MatDialog) { }
 
   @Input() private card: ICard;
 

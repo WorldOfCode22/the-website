@@ -27,4 +27,9 @@ describe('ProjectsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('creates a project card for every card', () => {
+    const cards = component.Cards;
+    expect(cards.length).toEqual(fixture.nativeElement.querySelectorAll('app-project-card').length);
+  });
 });

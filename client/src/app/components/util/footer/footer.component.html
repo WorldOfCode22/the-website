@@ -11,20 +11,20 @@
   <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
     <ul class="list-unstyled">
       <h5>Navigation</h5>
-      <li [routerLink]="['/']">Home</li>
-      <li [routerLink]="['/about']">About Me</li>
-      <li [routerLink]="['/projects']">My Projects</li>
-      <li [routerLink]="['/skills']">My Skills</li>
+      <li id="home-nav" [routerLink]="['/']">Home</li>
+      <li id="about-nav" [routerLink]="['/about']">About Me</li>
+      <li id="projects-nav" [routerLink]="['/projects']">My Projects</li>
+      <li id="skills-nav" [routerLink]="['/skills']">My Skills</li>
     </ul>
   </div>
   <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
     <h5>Legal</h5>
-    <p>© {{Year}} by Sloan Gwaltney.</p>
+    <p id="year">© {{Year}} by Sloan Gwaltney.</p>
     <p>This websites source code is available at link and is copyrighted by Sloan Gwaltney.</p>
     <h5>Versions</h5>
     <ul class="list-unstyled">
-      <li>Website: {{WebsiteVersion}}</li>
-      <li>API: {{ApiVersion}}</li>
+      <li id="web-version">Website: {{WebsiteVersion}}</li>
+      <li id="api-version">API: {{ApiVersion}}</li>
     </ul>
   </div>
 </div>

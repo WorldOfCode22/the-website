@@ -1,0 +1,23 @@
+{
+  "name": "sloangwaltney.com",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "./api/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorldOfCode22/the-website.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Sloan Gwaltney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WorldOfCode22/the-website/issues"
+  },
+  "homepage": "https://github.com/WorldOfCode22/the-website#readme"
+}

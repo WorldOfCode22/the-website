@@ -17,7 +17,7 @@ fastify.get('/', (request, reply) => {
   reply.sendFile("/client/index.html");
 })
 
-fastify.listen(process.env.PORT, (err, address) => {
+fastify.listen(process.env.PORT, '0.0.0.0', (err, address) => {
   if (err) {
     fastify.log.error(err)
     process.exit(1)

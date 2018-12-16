@@ -14,6 +14,11 @@
     "personal",
     "website"
   ],
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "fastify": "^1.13.2",
+    "fastify-static": "^1.0.0"
+  },
   "author": "Sloan Gwaltney",
   "license": "MIT",
   "bugs": {

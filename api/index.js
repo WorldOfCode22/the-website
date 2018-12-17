@@ -13,6 +13,10 @@ fastify.register(fastStatic, {
   prefix: '/public'
 })
 
+fastify.decorate('notFound', (request, reply) => {
+  reply.sendFile("/client/index.html")
+})
+
 fastify.get('/', (request, reply) => {
   reply.sendFile("/client/index.html");
 })
@@ -23,3 +27,5 @@ fastify.listen(process.env.PORT, '0.0.0.0', (err, address) => {
     process.exit(1)
   }
 })
+
+fastify.setNotFoundHandler(fastify.notFound)

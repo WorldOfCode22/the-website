@@ -20,6 +20,8 @@ import { DialogPopupComponent } from './components/util/dialog-popup/dialog-popu
 import { SkillsComponent } from './components/routes/skills/skills.component';
 import { HomeComponent } from './components/routes/home/home.component';
 import { FooterComponent } from './components/util/footer/footer.component';
+import { PageNotFoundComponent } from './components/util/page-not-found/page-not-found.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { FooterComponent } from './components/util/footer/footer.component';
     DialogPopupComponent,
     SkillsComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

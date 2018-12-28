@@ -37,7 +37,7 @@ export class ProjectCardComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((val) => {
       if (val === 'OK') {
-        window.open(this.AppLink, '_blank');
+        window.location.assign(this.AppLink);
       }
     });
   }

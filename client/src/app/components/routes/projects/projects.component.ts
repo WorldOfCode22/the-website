@@ -54,6 +54,17 @@ export class ProjectsComponent implements OnInit {
       image: `${environment.baseApiUrl}/images/mark-down.png`,
       localLink: false,
       link: 'https://codepen.io/Bloodypizza17/full/ooqvjL'
+    },
+    {
+      title: 'Chingu',
+      subtitle: 'Chingu facilitates global collaboration on projects in a structure focused on improving remote development skills',
+      content: 'I spent 2 months helping chingu release a prototype build for a major Devpost hackathon.' +
+      ' I was mostly involved in using graphql to bring postgres and mongo together so that the benefits of each could be leveraged.' +
+      ' I helped advise other things on both the back and frontend. To visit the hackathon page click visit below.' +
+      ' To visit the website they use today go to chingu.io',
+      image: `${environment.baseApiUrl}/images/chingu.png`,
+      localLink: false,
+      link: 'https://devpost.com/software/chingu-developer-network-ow1dhu'
     }
   ];
   constructor() { }

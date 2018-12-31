@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "bundle-report": "webpack-bundle-analyzer ./dist/client/stats.json"
+    "bundle-report": "webpack-bundle-analyzer ./dist/client/stats.json",
+    "build-stage": "ng build --configuration=staging",
+    "build-production": "ng build --prod"
   },
   "private": true,
   "dependencies": {

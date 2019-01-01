@@ -1,1 +1,1 @@
-web: node ./api/index.js
+web: npm install && node ./api/index.js

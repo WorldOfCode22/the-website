@@ -1,16 +1,16 @@
 <div *ngIf="FullLayout; else drop">
   <mat-toolbar color="primary">
-    <span id="full-home-nav" [routerLink]="['/']">Sloan Gwaltney</span>
+    <span id="full-home-nav"><a [routerLink]="['/']" class="no-underline">Sloan Gwaltney</a></span>
     <span class="spacer"></span>
-    <span class="nav-item" id="full-about-nav" [routerLink]="['/about']">About Me</span>
-    <span class="nav-item" id="full-projects-nav" [routerLink]="['/projects']">Projects</span>
-    <span class="nav-item" id="full-skills-nav" [routerLink]="['/skills']">My Skills</span>
+    <span class="nav-item" id="full-about-nav"><a [routerLink]="['/about']" class="no-underline">About Me</a></span>
+    <span class="nav-item" id="full-projects-nav"><a [routerLink]="['/projects']" class="no-underline">Projects</a></span>
+    <span class="nav-item" id="full-skills-nav"><a [routerLink]="['/skills']" class="no-underline">My Skills</a></span>
   </mat-toolbar>
 </div>
 
 <ng-template #drop>
   <mat-toolbar color="primary">
-    <span id="drop-home-nav" [routerLink]="['/']">Sloan Gwaltney</span>
+    <span id="drop-home-nav"><a [routerLink]="['/']" class="no-underline">Sloan Gwaltney</a></span>
     <span class="spacer"></span>
     <button mat-icon-button id="drop" [matMenuTriggerFor]="dropdown" #drop>
       <mat-icon>menu</mat-icon>

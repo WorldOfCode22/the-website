@@ -65,6 +65,15 @@ export class ProjectsComponent implements OnInit {
       image: `${environment.baseApiUrl}/images/chingu.png`,
       localLink: false,
       link: 'https://devpost.com/software/chingu-developer-network-ow1dhu'
+    },
+    {
+      title: 'Password Provider (In Progress)',
+      subtitle: 'A place to store your passwords',
+      content: 'This application is a work in progress that when finished will allow to store and view their passwords.' +
+      ' Clicking visit below will take you to it\'s github repository.',
+      image: `${environment.baseApiUrl}/images/passwords.png`,
+      localLink: false,
+      link: 'https://github.com/WorldOfCode22/lockdown'
     }
   ];
   constructor() { }

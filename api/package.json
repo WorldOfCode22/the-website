@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "dotenv": "^6.2.0",
-    "fastify": "^1.13.2",
-    "fastify-static": "^1.0.0"
+    "express": "^4.16.4"
   }
 }
